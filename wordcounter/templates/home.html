@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Word Counter</h1>
+<a href="{% url "about" %}">About this website</a>
+<form action="count" method="get">
+    <textarea name="full_text" id="full_text" cols="100" rows="10"></textarea>
+    <input type="submit" value="submit">
+</form>
+{% endblock %}

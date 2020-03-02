@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Amount of words is: {{ words_counted }}</h1> <a href="{% url "home" %}">Go back</a>
+<hr>
+<h3>Original Text:</h3>
+<p>{{ full_text }}</p>
+<hr>
+<h3>Repeated words:</h3>
+
+{% for word, amount in repeated_words %}
+    <p>{{word}}: {{amount}}</p>
+{% endfor %}
+
+{% endblock %}
