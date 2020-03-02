@@ -1,1 +1,1 @@
-web: web: gunicorn wordcounter.wsgi
+web: gunicorn wordcounter.wsgi
